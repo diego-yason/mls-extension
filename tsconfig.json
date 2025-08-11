@@ -1,0 +1,50 @@
+{
+    // Visit https://aka.ms/tsconfig to read more about this file
+    "compilerOptions": {
+        // File Layout
+        "sourceRoot": "./src",
+        "rootDir": "./src",
+        "outDir": "./out",
+
+        // Environment Settings
+        // See also https://aka.ms/tsconfig/module
+        "module": "es2020",
+        // "moduleResolution": "node10",
+        "target": "esnext",
+        "types": ["chrome"],
+        "allowJs": true,
+        "checkJs": true,
+        // For nodejs:
+        "lib": ["ES2016", "DOM"],
+        // "types": ["node"],
+        // and npm install -D @types/node
+
+        // Other Outputs
+        "sourceMap": true,
+        "declaration": false,
+        "declarationMap": false,
+
+        // Stricter Typechecking Options
+        "noUncheckedIndexedAccess": true,
+        "exactOptionalPropertyTypes": true,
+
+        // Style Options
+        // "noImplicitReturns": true,
+        // "noImplicitOverride": true,
+        // "noUnusedLocals": true,
+        // "noUnusedParameters": true,
+        // "noFallthroughCasesInSwitch": true,
+        // "noPropertyAccessFromIndexSignature": true,
+
+        // Recommended Options
+        "strict": true,
+        "jsx": "react-jsx",
+        // "verbatimModuleSyntax": true,
+        // "isolatedModules": true,
+        "noUncheckedSideEffectImports": true,
+        "moduleDetection": "force",
+        "skipLibCheck": true
+    },
+    "include": ["src/**/*"],
+    "exclude": ["out/**"]
+}
